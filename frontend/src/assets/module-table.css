@@ -1,0 +1,114 @@
+/**
+ * 功能模块列表统一风格（参考角色权限表：浅灰表头、全边框网格、操作为蓝/红实心小按钮）
+ * 在 <el-table> 上增加 class="module-table"，操作列内用 <div class="module-table-ops"> 包裹按钮。
+ */
+
+.module-table.el-table {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.module-table.el-table--border th.el-table__cell {
+  background-color: #f5f7fa !important;
+  color: #303133;
+  font-weight: 600;
+}
+
+.module-table.el-table--border td.el-table__cell {
+  color: #606266;
+}
+
+.module-table.el-table--border th.el-table__cell,
+.module-table.el-table--border td.el-table__cell {
+  padding: 10px 0;
+}
+
+.module-table .module-table-ops {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.module-table .module-table-ops .el-button {
+  margin: 0 !important;
+}
+
+/* 操作按钮强制单行（用户表等按钮较多时使用 class="module-table-ops module-table-ops--nowrap"） */
+.module-table .module-table-ops.module-table-ops--nowrap {
+  flex-wrap: nowrap;
+  gap: 6px;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+
+.module-table .module-table-ops.module-table-ops--nowrap .el-button {
+  flex-shrink: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* 黑夜主题：表头与内容区对比 */
+.app-shell.theme-dark .module-table.el-table--border th.el-table__cell {
+  background-color: var(--bg-card-soft) !important;
+  color: var(--text-main);
+}
+
+.app-shell.theme-dark .module-table.el-table--border td.el-table__cell {
+  color: var(--text-main);
+}
+
+/* 无 Element 表格时的原生 <table>（定价/规则示意页、客户详情关联保单等） */
+.module-native-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  border: 1px solid #ebeef5;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.module-native-table th,
+.module-native-table td {
+  border: 1px solid #ebeef5;
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.module-native-table thead th {
+  background-color: #f5f7fa;
+  color: #303133;
+  font-weight: 600;
+}
+
+.module-native-table tbody td {
+  color: #606266;
+}
+
+.module-native-table tbody tr:hover td {
+  background-color: #fafafa;
+}
+
+.app-shell.theme-dark .module-native-table {
+  border-color: var(--border-subtle);
+}
+
+.app-shell.theme-dark .module-native-table th,
+.app-shell.theme-dark .module-native-table td {
+  border-color: var(--border-subtle);
+}
+
+.app-shell.theme-dark .module-native-table thead th {
+  background-color: var(--bg-card-soft);
+  color: var(--text-main);
+}
+
+.app-shell.theme-dark .module-native-table tbody td {
+  color: var(--text-main);
+}
+
+.app-shell.theme-dark .module-native-table tbody tr:hover td {
+  background-color: rgba(255, 255, 255, 0.04);
+}

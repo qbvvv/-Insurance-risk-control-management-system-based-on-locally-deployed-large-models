@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="loginBgBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6f8f5"/>
+      <stop offset="38%" stop-color="#ecf1ec"/>
+      <stop offset="72%" stop-color="#e2eae4"/>
+      <stop offset="100%" stop-color="#d8e4dd"/>
+    </linearGradient>
+    <linearGradient id="loginBgWave" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b8cdc2" stop-opacity="0.22"/>
+      <stop offset="45%" stop-color="#d5e3da" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#eef4f0" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="loginBgGlow1" cx="22%" cy="78%" r="55%">
+      <stop offset="0%" stop-color="#c9dbd1" stop-opacity="0.65"/>
+      <stop offset="55%" stop-color="#dfe9e3" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#f6f8f5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="loginBgGlow2" cx="88%" cy="18%" r="42%">
+      <stop offset="0%" stop-color="#d2e0d8" stop-opacity="0.55"/>
+      <stop offset="70%" stop-color="#eef3ef" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#f6f8f5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#loginBgBase)"/>
+  <rect width="1920" height="1080" fill="url(#loginBgGlow1)"/>
+  <rect width="1920" height="1080" fill="url(#loginBgGlow2)"/>
+  <path fill="url(#loginBgWave)" d="M0 695 C320 620 580 740 960 705 C1320 672 1560 598 1920 655 V1080 H0 Z"/>
+  <path fill="#aebfa8" fill-opacity="0.12" d="M0 760 C420 690 780 820 1200 785 C1480 762 1720 705 1920 735 V1080 H0 Z"/>
+  <g fill="none" stroke="#9aaf9f" stroke-opacity="0.18" stroke-width="1.2">
+    <path d="M-40 420 Q480 380 960 430 T1960 400"/>
+    <path d="M-40 480 Q520 430 1000 488 T1960 455"/>
+    <path d="M-40 540 Q560 500 1040 548 T1960 510"/>
+  </g>
+</svg>
