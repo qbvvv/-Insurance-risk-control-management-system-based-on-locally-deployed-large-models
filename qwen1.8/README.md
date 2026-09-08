@@ -1,0 +1,1 @@
+本地部署了一个qwen模型，可以去huggingface上下载
